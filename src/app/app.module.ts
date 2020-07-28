@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {ConfigServerService} from './core/config-server.service';
 import { ModuleRoutingModule }from './module/module.routing.module'
 import { FormsModule } from '@angular/forms';
+
 
  
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +24,7 @@ import { from } from 'rxjs';
     ModuleRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ConfigServerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
